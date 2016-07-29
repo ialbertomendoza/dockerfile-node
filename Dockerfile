@@ -2,7 +2,7 @@ FROM ubuntu
 MAINTAINER Alberto Mendoza <mendozaene@gmail.com>
 
 # Required packages 
-RUN apt-get update && apt-get install  -y build-essential libssl-dev man
+RUN apt-get update && apt-get install -y build-essential libssl-dev curl man
 
 # Download source for install node v0.16.1
 RUN curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
